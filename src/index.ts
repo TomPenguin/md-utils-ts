@@ -14,7 +14,7 @@ export const underline = (text: string) => `<u>${text}</u>`;
 
 export const link = (text: string, href: string) => `[${text}](${href})`;
 
-export const codeBlock = (text: string, language: "") => `\`\`\`${language}
+export const codeBlock = (text: string, language = "") => `\`\`\`${language}
 ${text}
 \`\`\``;
 
