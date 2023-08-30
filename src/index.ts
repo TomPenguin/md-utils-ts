@@ -58,7 +58,7 @@ export const code =
  * @param text - The code content.
  * @returns Inline code in markdown format.
  */
-export const inlineCode = code()();
+export const inlineCode = code(true)();
 
 /**
  * Create a code block with optional syntax highlighting.
@@ -66,7 +66,7 @@ export const inlineCode = code()();
  * @param text - The code content.
  * @returns A code block in markdown format.
  */
-export const codeBlock = code(true);
+export const codeBlock = code();
 
 /**
  * Create an equation block or inline equation.
