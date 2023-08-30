@@ -1,10 +1,10 @@
-# md-utils
+# md-utils-ts
 
-Simple Markdown Utility Functions.
+Tiny markdown utility functions for Typescript.
 
 ## Usage
 
-See [Implementation](https://github.com/TomPenguin/md-utils/blob/main/src/index.ts).
+See [Implementation](https://github.com/TomPenguin/md-utils-ts/blob/main/src/index.ts) for details.
 
 ```ts
 import * as md from "md-utils";

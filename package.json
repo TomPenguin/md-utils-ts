@@ -1,5 +1,5 @@
 {
-  "name": "md-utils",
+  "name": "md-utils-ts",
   "version": "0.0.1",
   "description": "",
   "main": "./dist/index.js",
@@ -17,7 +17,7 @@
     "markdown",
     "utils"
   ],
-  "author": "",
+  "author": "TomPenguin <tom.penguin.zoo@gmail.com> (https://github.com/TomPenguin)",
   "license": "MIT",
   "devDependencies": {
     "esbuild": "^0.19.2",
@@ -29,7 +29,7 @@
     "markdown-table": "^3.0.3"
   },
   "bugs": {
-    "url": "https://github.com/TomPenguin/md-utils/issues"
+    "url": "https://github.com/TomPenguin/md-utils-ts/issues"
   },
-  "homepage": "https://github.com/TomPenguin/md-utils"
+  "homepage": "https://github.com/TomPenguin/md-utils-ts"
 }
