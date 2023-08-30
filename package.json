@@ -9,8 +9,16 @@
       "import": "./dist/index.mjs"
     }
   },
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
   "scripts": {
-    "build": "node esbuild.config.mjs",
+    "build": "pnpm run build:common && pnpm run build:type",
+    "build:common": "node esbuild.config.mjs",
+    "build:type": "tsc --emitDeclarationOnly --declaration",
+    "prepare": "pnpm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -20,12 +28,12 @@
   "author": "TomPenguin <tom.penguin.zoo@gmail.com> (https://github.com/TomPenguin)",
   "license": "MIT",
   "devDependencies": {
-    "esbuild": "^0.19.2",
     "prettier": "^3.0.2",
     "prettier-plugin-organize-imports": "^3.2.3",
     "typescript": "^5.2.2"
   },
   "dependencies": {
+    "esbuild": "^0.19.2",
     "markdown-table": "^3.0.3"
   },
   "bugs": {
