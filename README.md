@@ -7,7 +7,7 @@ Tiny markdown utility functions for Typescript.
 Install with npm:
 
 ```bash
-$ npm install --save markdown-utils
+$ npm install --save md-utils-ts
 ```
 
 ## Usage
@@ -15,10 +15,14 @@ $ npm install --save markdown-utils
 See [Implementation](https://github.com/TomPenguin/md-utils-ts/blob/main/src/index.ts) for details.
 
 ```ts
-import md from "md-utils";
+import md, { bold } from "md-utils-ts";
 
-const boldText = md.bold("some text");
+const boldText = bold("some text");
 console.log(boldText); // "**some text**"
+
+// Use function from the imported 'md'
+const italicText = md.italic("Hello, world!");
+console.log(italicText); // "_Hello, world!_"
 ```
 
 ## API
