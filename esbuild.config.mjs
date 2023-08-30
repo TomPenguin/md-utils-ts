@@ -11,7 +11,7 @@ await esbuild
   .build({
     ...commonBuildOptions,
     format: "esm",
-    outfile: "dist/index.mjs",
+    outfile: "dist/esm/index.mjs",
   })
   .catch(() => process.exit(1));
 
@@ -19,6 +19,6 @@ await esbuild
   .build({
     ...commonBuildOptions,
     format: "cjs",
-    outfile: "dist/index.js",
+    outfile: "dist/cjs/index.js",
   })
   .catch(() => process.exit(1));
