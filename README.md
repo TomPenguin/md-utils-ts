@@ -27,6 +27,8 @@ console.log(italicText); // "_Hello, world!_"
 
 ## API
 
+> Note: Table is not supported. You can use [markdown-table](https://github.com/wooorm/markdown-table) as well.
+
 ## bold
 
 Make the text bold.
@@ -432,33 +434,6 @@ const detailsElement = details("Click to expand", "Hidden content");
 //
 // Hidden content
 // </details>
-```
-
-## table
-
-Create a table using the markdownTable library.
-Wrapper for [markdown-table](https://github.com/wooorm/markdown-table).
-
-### Parameters:
-
-- `options` (Options): Options for formatting the table.
-- `cells` (string[][]): Table cells to be formatted.
-
-### Example:
-
-```ts
-const options = { align: ["l", "c", "r"] };
-const cells = [
-  ["Left", "Center", "Right"],
-  ["1", "2", "3"],
-  ["4", "5", "6"],
-];
-const formattedTable = table(options)(cells);
-// Output:
-// | Left | Center | Right |
-// |------|------|------|
-// | 1 | 2 | 3 |
-// | 4 | 5 | 6 |
 ```
 
 ## sup

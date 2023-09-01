@@ -1,5 +1,3 @@
-import { markdownTable, Options } from "markdown-table";
-
 /**
  * Make the text bold.
  * @param text - The input text.
@@ -199,15 +197,6 @@ export const details = (summary: string, details: string) => `<details>
 
 ${details}
 </details>`;
-
-/**
- * Create a table using the markdownTable library.
- * Wrapper for [markdown-table](https://github.com/wooorm/markdown-table).
- * @param options - Options for formatting the table.
- * @returns A formatted table in markdown format.
- */
-export const table = (options: Options) => (cells: string[][]) =>
-  markdownTable(cells, options);
 
 /**
  * Create a superscript text.
